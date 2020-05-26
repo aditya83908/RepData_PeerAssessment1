@@ -5,7 +5,9 @@ output:
     keep_md: true
 ---
 
-
+```{r globaloptions}
+knitr::opts_chunk$set(fig.path = "figures/")
+```
 ## Loading and preprocessing the data
 ```{r}
 activity<- read.csv('activity.csv',sep = ",",header = TRUE, na.strings ="NA",
